@@ -809,22 +809,4 @@ class FileNotFoundException extends RuntimeException {
     }
 }
 
-/**
- * 霍夫曼编码解码演示类
- *
- * @author 江峰
- * @create 2017-11-21
- */
-class HuffmanTreeDemo {
-    public static void main(String[] args) throws Exception {
-        String srcFilePath = "C:\\Users\\江峰\\Desktop\\Huffman.txt";
-        String encodeFilePath = "C:\\Users\\江峰\\Desktop\\encode.hf";
-        String decodeFilePath = "C:\\Users\\江峰\\Desktop\\decode.txt";
-        HuffmanTree tree = new HuffmanTree();
-        System.out.println(tree.huffmanEncodeFile(srcFilePath, encodeFilePath));
-        System.out.println(tree.huffmanDecodeFile(encodeFilePath, decodeFilePath));
-        System.exit(0);
-    }
-}
-
 
