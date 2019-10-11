@@ -8494,15 +8494,6 @@ public class LeetcodeDemo {
         }
         return head.next;
     }
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-        @Override
-        public String toString() {
-            return String.valueOf(val);
-        }
-    }
     private static class TreeNode {
         int val;
         TreeNode left;

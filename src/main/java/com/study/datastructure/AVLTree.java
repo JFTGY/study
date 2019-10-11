@@ -1,10 +1,6 @@
 package com.study.datastructure;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
 
 /**
  * AVL树类

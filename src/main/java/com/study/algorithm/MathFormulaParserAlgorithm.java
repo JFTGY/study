@@ -30,10 +30,7 @@ public class MathFormulaParserAlgorithm {
     }
 
     public double execute(String formula) {
-        MathFormulaParserAlgorithm mfp = new MathFormulaParserAlgorithm();
-        List<String> instructions = mfp.formulaToInstructions(formula);
-        instructions = mfp.rpn(instructions);
-        return mfp.executeTokens(instructions);
+        return executeTokens(rpn(formulaToInstructions(formula)));
     }
 
     /**
