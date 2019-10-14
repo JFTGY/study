@@ -8490,32 +8490,6 @@ public class LeetcodeDemo {
         }
     }
 
-    public static int lengthOfLongestSubstring(String s) {
-        int len = s.length();
-        if (len == 0) {
-            return 0;
-        }
-        char[] chars = s.toCharArray();
-        int maxVal = 1;
-        int searchLen = 1;
-        for (int i = 1; i < len; i++) {
-            int target = chars[i];
-            int nextSearchLen = 1;
-            for (int j = i - 1, limit = j - searchLen; j > limit; j--) {
-                if (chars[j] == target) {
-                    break;
-                } else {
-                    nextSearchLen++;
-                }
-            }
-            searchLen = nextSearchLen;
-            if (searchLen > maxVal) {
-                maxVal = searchLen;
-            }
-        }
-        return maxVal;
-    }
-
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         java.util.ArrayList<Integer> list = new java.util.ArrayList<Integer>();
         while (l1 != null || l2 != null) {
