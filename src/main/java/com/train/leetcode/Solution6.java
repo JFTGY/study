@@ -9,6 +9,8 @@ package com.train.leetcode;
  * 3      9
  * 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："0615724839"。
  *
+ * 链接：https://www.leetcode.com/problems/zigzag-conversion/
+ *
  * @author : JF
  * Date    : 2019.10.14
  * Time    : 23:29

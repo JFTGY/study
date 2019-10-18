@@ -3,6 +3,8 @@ package com.train.leetcode;
 /**
  * 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
  *
+ * 链接：https://www.leetcode.com/problems/longest-palindromic-substring/
+ *
  * @author : JF
  * Date    : 2019.10.13
  * Time    : 17:43
