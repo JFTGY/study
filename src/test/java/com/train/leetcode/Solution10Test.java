@@ -11,8 +11,8 @@ import org.junit.Test;
  */
 public class Solution10Test {
 
-    private static String[][] TEST_CASE_PARAMS = {{"", "c*c*"}, {"a", ".*.a*"}, {"aa", "a"}, {"", ""}, {"aa", "*a*"}};
-    private static boolean[] TEST_CASE_RESULT = {true, true, false, true, false};
+    private static final String[][] TEST_CASE_PARAMS = {{"", "c*c*"}, {"a", ".*.a*"}, {"aa", "a"}, {"", ""}, {"aa", "*a*"}};
+    private static final boolean[] TEST_CASE_RESULTS = {true, true, false, true, false};
 
     private Solution10 solution;
 
@@ -23,7 +23,7 @@ public class Solution10Test {
     @Test
     public void isMatch() {
         for(int i = TEST_CASE_PARAMS.length - 1; i >= 0; --i){
-            Assert.assertEquals(solution.isMatch(TEST_CASE_PARAMS[i][0], TEST_CASE_PARAMS[i][1]), TEST_CASE_RESULT[i]);
+            Assert.assertEquals(solution.isMatch(TEST_CASE_PARAMS[i][0], TEST_CASE_PARAMS[i][1]), TEST_CASE_RESULTS[i]);
         }
     }
 }
